@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Web Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    header { background-color: #004080; color: white; padding: 20px; text-align: center; }
+    nav { background: #333; color: white; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    section { padding: 20px; }
+    h2 { color: #004080; }
+    .card { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { text-align: center; background: #004080; color: white; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Web Portal</h1>
+    <p>Welcome Students | Faculty | Admin</p>
+  </header>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#assignments">Assignments</a>
+    <a href="#notices">Notices</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="card">Data Structures & Algorithms</div>
+    <div class="card">Web Development</div>
+    <div class="card">Operating Systems</div>
+  </section>
+
+  <section id="assignments">
+    <h2>Assignment Submission</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="text" placeholder="Subject" required />
+      <input type="file" />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="notices">
+    <h2>Notice Board</h2>
+    <div class="card">🔔 Mid-sem exams start from 15th July.</div>
+    <div class="card">📢 Project reviews scheduled on 10th July.</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 College Web Portal. All rights reserved.
+  </footer>
+</body>
+</html>
